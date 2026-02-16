@@ -20,7 +20,7 @@ class Agenticide < Formula
       sha256 "REPLACE_WITH_ACTUAL_SHA256_LINUX_ARM64"
     else
       url "https://github.com/ivikasavnish/agenticide/releases/download/v3.1.0/agenticide-linux-x64.tar.gz"
-      sha256 "REPLACE_WITH_ACTUAL_SHA256_LINUX_X64"
+      sha256 "d53fa2565c387717186ee89fe2bc4c0fa92bb51ed752f79f27bd64807ed488bd"
     end
   end
 
