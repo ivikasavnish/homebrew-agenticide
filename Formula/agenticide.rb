@@ -7,20 +7,20 @@ class Agenticide < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ivikasavnish/agenticide-go/releases/download/v0.5.0/agenticide-darwin-arm64"
-      sha256 "9140ad490a92fb30d8b23a4920a4572a4162e06adad34fa20c1cee70b51a126c"
+      sha256 "ee215cf9a4e783ededcb5d7ee98d3507ff79a4db94a87dbbf21b3144d1370ab4"
     else
       url "https://github.com/ivikasavnish/agenticide-go/releases/download/v0.5.0/agenticide-darwin-amd64"
-      sha256 "f7035b7358c2e2e9374b83f087b3df181eb1df88ab2f5c89c3fbe1ed6b3ff186"
+      sha256 "d75d52de85a9f466898387f33425c47f848e1724f3b0d8e44520b96b324b6266"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/ivikasavnish/agenticide-go/releases/download/v0.5.0/agenticide-linux-arm64"
-      sha256 "f66d27f36ef4f6549a614bd41c5c1a8dbd4fc8bb8779ce9cce75d54504a04d52"
+      sha256 "b6b9aca2a81c1f77d6bb2e685197f89c20e02eb9286287715649c9edbbc0143f"
     else
       url "https://github.com/ivikasavnish/agenticide-go/releases/download/v0.5.0/agenticide-linux-amd64"
-      sha256 "4b203a3890d8d2f654334dc2f91da8c30c668470b18694a7fe8f19acad8b070e"
+      sha256 "8a3ca775730d1a28989127d350f394acd52061c369b58194aa29ce2aecf4f6fd"
     end
   end
 
@@ -39,16 +39,16 @@ class Agenticide < Formula
     <<~EOS
       🎉 Agenticide Go v0.5.0 installed!
       
-      🚀 Quick Start:
-        agenticide search           # Browse extensions
-        agenticide install security # Install extension
-        agenticide chat             # Start AI chat
-        agenticide --help           # Show all commands
+      🚀 First Run:
+        Run 'agenticide' and follow the setup wizard to:
+        - Enter your email and phone
+        - Choose AI provider (OpenAI, Anthropic, Copilot, Ollama)
+        - Configure API key
       
       💡 Extension Marketplace (12+ extensions):
-        security, code-analyzer, project-runner, web-search,
-        test-generator, git-ops, ai-recipes, deployment,
-        monitoring, cost-controller, db-analytics, ui-design
+        agenticide search           # Browse extensions
+        agenticide install security # Install extension
+        agenticide list             # List installed
       
       📖 Documentation:
         https://github.com/ivikasavnish/agenticide-go
